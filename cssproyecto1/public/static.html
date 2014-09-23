@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Static Animations</title>
+    <style>
+        h1 {
+            color: lightskyblue;
+            text-align: center;
+            -webkit-animation: header 10s;
+            -webkit-animation-iterator-count:infinite;
+        }
+
+            @-webkit-keyframes header {
+                0% {color:lightskyblue;left:0px;top:0px;}
+                25% {color:darkgoldenrod;left:200px;top:0px;}
+                50% {color:aquamarine;left:0px;top:50px;}
+                75% {color:navy;left:200px;top:0px;}
+                100% {color:lightskyblue;left:0px;left:0px;}
+
+            }
+        #example1 {
+            width:100px;
+            height:100px;
+            -webkit-animation: example1 10s;
+            animation: example1 10s;}
+            @-webkit-keyframes example1 {
+                from {background:lightslategrey}
+                to {background:black}
+            }
+
+        #example2 {
+            width:100px;
+            height:100px;
+            background-color: red;
+            -webkit-animation: example2 10s;}
+            @-webkit-keyframes example2 {
+                0% {background:red;}
+                25% {background:blue;}
+                50% {background:green;}
+                100% {background:black;}
+            }
+        #back {
+            width: 450px;
+            height: 20px;
+            background-color: lightskyblue;
+            left: 400px;
+            top: 400px;
+            font-size: 100%;
+            -webkit-transition: width 1s;
+            transition: height .4s, width .4s, font-size .4s, background-color .4s;}
+        #back:hover {
+            width:400px;
+            height:60px;
+            background-color: silver;
+            font-family:cursive;
+            font-size: 120%;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1><u>Static Animations</u></h1>
+    <p style="color: red"> Static Animations, as the name implies, <i>don't move.</i> They can do a number of things.</p>
+    <p style="color: darkslateblue; font-family: cursive">A simple example is a box (yes, box fans! You can finally see one!) that changes color over time. Lets see it:</p>
+    <hr>
+    <div id="example1">
+    </div>
+    <hr>
+    <p style="color: magenta">Cool, Right? Now, here's the code behind the scenes!</p>
+    <hr>
+    <p><code>}<br>
+        #example1 {<br>
+        width:100px;<br>
+        height:100px;<br>
+        -webkit-animation: example1 10s;<br>
+        animation: example1 10s;}<br>
+        @-webkit-keyframes example1 {<br>
+        from {background:lightslategrey}<br>
+        to {background:black}<br>
+        }<br>
+
+
+        }</code></p>
+    <p style="color:hotpink">Now, lets break it down:</p>
+    <p style="color:royalblue; font-family: cursive">The name of the box is #example1. Thus, the styles below it will correspond to that object.</p>
+    <p style="color:coral">The height and width are set below it, each being 100px </p>
+    <p style="color:white;background-color: silver">The next two lines indicate that the box is to have an animation. The duration of the animation (10s) is also present. Use both lines, depending on what browser you have.</p>
+    <p style="color:turquoise">Then, the animation code begins. For this simple example, it goes from a lightlategrey background to a black one. </p>
+    <hr>
+    <p>Now here's another example, which comes out with a similar product:</p>
+    <p><code> #example2 {<br>
+        width:100px;<br>
+        height:100px;<br>
+        background-color: red;<br>
+        -webkit-animation: example2 10s;}<br>
+        @-webkit-keyframes example2 {<br>
+        0% {background:red;}<br>
+        25% {background:blue;}<br>
+        50% {background:green;}<br>
+        100% {background:black;}<br>
+        }</code></p>
+    <hr>
+    <p>That comes out to:</p>
+    <div id="example2"></div>
+    <hr>
+
+    <a id="back" href="menu.html">Back</a>
+
+</body>
+</html>

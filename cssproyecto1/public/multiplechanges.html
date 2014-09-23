@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Multiple Changes</title>
+    <style>
+        h1 {
+            color:navy;
+            background-color: floralwhite;
+            text-align: center;
+            font-family: cursive;
+        }
+        #example3 {
+            height:100px;
+            width:100px;
+            background-color: red;
+            position: relative;
+            -webkit-animation: example3 5s;}
+        @-webkit-keyframes example3 {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:red; left:200px; top:0px;}
+            50%  {background:red; left:500px; top:0px;}
+            75%  {background:red; left:0px; top:0px;}
+            100% {background:red; left:0px; top:0px;}
+
+        }
+        #example4 {
+            height:100px;
+            width:100px;
+            background-color: red;
+            position:relative;
+           -webkit-animation: example4 5s;}
+        @-webkit-keyframes example4 {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:navy; left:200px; top:0px;}
+            50%  {background:peachpuff; left:300px; top: 0px;}
+            75%  {background:indianred; left:200px; top:0px;}
+            100% {background:indigo; left:0px; top:0px;}
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Animations with Multiple Changes </h1>
+    <p style="color:red">This type of animation has to do with the movement of an object accross the page.</p>
+    <p style="color:orange">Lets see one in action:</p>
+
+    <div id="example3"></div>
+    <hr>
+
+    <p style="color:cyan">This is another example, but this time the box changes colors</p>
+
+    <div id="example4"></div>
+
+    <hr>
+    <a style="color:red;background-color: blue" href="menu.html">Back</a>
+</body>
+</html>

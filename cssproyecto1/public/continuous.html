@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Continuous</title>
+    <style>
+        h1 {
+            color:gold;
+            text-align: center;
+            font-size: 150%;
+        }
+        #example6 {
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            -webkit-animation-name: example6;
+            -webkit-animation-duration: 5s;
+            -webkit-animaiton-timing-function:linear;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate;
+            -webkit-animation-play-state:running;}
+
+            @-webkit-keyframes example6 {
+                0% {background:red; left:0px; top:0px;}
+                25% {background:orange; left:100px; top:0px;}
+                50% {background:yellow; left:100px; top:100px;}
+                75% {background:green; left:0px; top:100px;}
+                100% {background:blue; left:0px; top:0px;}
+
+
+
+
+            }
+            /*for animation-timing-function, that determines speed of animation.  (ie ease-in, ease-out)
+            direction is what direction the animation goes in (reverse, alternate, alternate-reverse, etc./*
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<h1>Continuous Animation</h1>
+
+<p style="font-size: 140%;color:hotpink">This is a Continuous Animation, which, as the name suggests, is an animation that doesn't stop and is infinite in duration.</p>
+<p style ="font-size: 140%;color:fuchsia">It is set to alternate after each time it finishes, so the animation is reversed and then reversed again.</p>
+
+<div id="example6"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a style ="font-size: 150%; color:darkmagenta;" href="menu.html">Back</a>
+
+
+
+
+</body>
+</html>

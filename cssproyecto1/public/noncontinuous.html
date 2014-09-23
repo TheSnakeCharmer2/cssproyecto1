@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Non Continuous</title>
+    <style>
+    h1 {
+        color:purple;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    #example5 {
+        height:300px;
+        width:300px;
+        background-color: red;
+        left:400px;top:400px;
+        -webkit-transition:width .2s;
+        transition:width .2s;
+
+    }
+    #example5:hover {
+        width:200px;
+
+    }
+    #example6 {
+        height:300px;
+        width:300px;
+        background-color: red;
+        left:400px;top:400px;
+        -webkit-transition:width .2s;
+        transition:width .2s, background-color .4s;
+
+    }
+    #example6:hover {
+        width:200px;
+        background-color: blue;
+
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<h1><u>Non-Continuous Animations</u></h1>
+<hr>
+<p style="text-align: center;color:lime;background-color: black">This is as simple as animations get:</p>
+
+<div id="example5"></div>
+
+<p>This is another example:</p>
+
+<div id="example6"></div>
+
+<a style="font-family: cursive;color:magenta;text-align: center;font-size: 150%" href="menu.html">Back</a>
+</body>
+</html>
